@@ -1,6 +1,6 @@
 import React from 'react'
-import { clashDisplayBold } from '@/utils/fonts'
 import Hamburger from './Hamburger'
+import GetLinkedText from './GetLinkedText'
 
 import { Inter } from 'next/font/google'
 
@@ -19,11 +19,9 @@ const Navbar = () => {
 
     return (
     <nav className='h-[10vh] px-4 sm:px-8 flex justify-between items-center border-b border-slate-700 relative'>
-        <p
-            className={"text-white"}
-            style={clashDisplayBold.style}>
-                get<span className='text-primaryPink'>linked</span>
-        </p>
+
+        <GetLinkedText />
+
         <Hamburger
             menuOpen={menuOpen}
             setMenuOpen={setMenuOpen}
