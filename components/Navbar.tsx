@@ -18,7 +18,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-    <nav className='h-[10vh] px-4 flex justify-between items-center border-b border-slate-700 relative'>
+    <nav className='h-[10vh] px-4 sm:px-8 flex justify-between items-center border-b border-slate-700 relative'>
         <p
             className={"text-white"}
             style={clashDisplayBold.style}>
