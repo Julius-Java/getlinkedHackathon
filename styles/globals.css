@@ -4,11 +4,11 @@
 
 
 body {
-    @apply bg-primaryPurpleDark
+    @apply bg-primaryPurpleDark overflow-hidden
 }
 
 @layer utilities {
     .cta-btn {
-        @apply bg-gradient-to-r from-pink-500 from-40% via-purple-600 to-blue-400 rounded py-2 px-6 font-bold;
+        @apply bg-gradient-to-r from-pink-500 from-40% via-purple-600 to-blue-400 rounded py-3 px-8 font-bold sm:py-2 sm:px-4;
     }
 }

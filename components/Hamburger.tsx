@@ -8,7 +8,7 @@ type HamburgerProps = {
 const Hamburger = ({menuOpen, setMenuOpen}: HamburgerProps) => {
     return (
         <button
-            className={` ${menuOpen && "p-[2px] bg-gradient-to-r from-primaryPink to-primaryPurpleLight rounded-full"} z-30`}
+            className={` ${menuOpen && "p-[2px] bg-gradient-to-r from-primaryPink to-primaryPurpleLight rounded-full"} z-30 sm:hidden`}
             onClick={() => setMenuOpen(!menuOpen)}
         >
             <div
