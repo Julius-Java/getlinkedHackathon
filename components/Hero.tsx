@@ -19,7 +19,7 @@ const unicaOne = Unica_One({
 
 const Hero = () => {
     return (
-        <section className='min-h-screen pt-8 my-8 relative border-b border-b-slate-800'>
+        <section className='pt-8 my-8 relative max-w-5xl w-[90%] mx-auto'>
             <BgGradient />
             <Stars />
             <div className='relative max-w-sm md:max-w-3xl mx-auto lg:-mr-0 mb-8'>
@@ -44,7 +44,7 @@ const Hero = () => {
                             <span className='text-primaryPink'> 1.0</span>
                         </h1>
                         <div
-                            className='absolute -top-4 right-5 xs:-top-5 xs:right-8 sm:right-16 lg:-top-10 lg:-right-8'
+                            className='absolute -top-4 right-5 xs:-top-5 xs:right-20 sm:right-16 lg:-top-10 lg:-right-8'
                         >
                             <Image
                                 className='w-[25px] h-[25px] sm:h-[30px] sm:w-[30px] lg:w-[50px] lg:h-[50px] animate-pulse'
@@ -53,7 +53,7 @@ const Hero = () => {
                             />
                         </div>
                         <div
-                            className='flex place-content-center flex-grow mt-2 self-end lg:absolute lg:bottom-0 lg:-right-28'
+                            className='flex place-content-center flex-grow mt-2 self-end xs:absolute xs:bottom-0 xs:-right-0 sm:-right-12 md:-right-14 lg:bottom-0 lg:-right-28'
                         >
                             <span className='block'>
                                 <Image

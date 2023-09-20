@@ -13,7 +13,9 @@ export default function Home() {
         <meta name="description" content='Get linked Hackathon. A chance to win exciting prices' />
       </Head>
       <main>
-        <Hero />
+        <div className='border-b border-b-slate-700'>
+          <Hero />
+        </div>
       </main>
     </>
   )

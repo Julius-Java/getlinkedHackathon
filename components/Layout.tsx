@@ -5,12 +5,12 @@ import Footer from './Footer'
 
 const Layout = ({children}: any) => {
     return (
-        <div className='-mr-[4px]'>
-            <header className='border-b border-slate-700 h-[10vh]'
+        <div className='-mr-[4px] sm:-mr-4 overflow-hidden'>
+            <header className='border-b border-b-slate-700 h-[10vh]'
             >
                 <Navbar />
             </header>
-            <main className='max-w-5xl w-[90%] mx-auto'>
+            <main className=''>
                 {children}
             </main>
             <Footer />
