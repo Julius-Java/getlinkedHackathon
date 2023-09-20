@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         xs: "320px",
+        xsL: "340px"
       },
       animate: {
         wobly: "blob 4s infinite"

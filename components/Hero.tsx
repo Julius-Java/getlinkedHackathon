@@ -5,7 +5,7 @@ import { clashDisplayBold } from '@/utils/fonts'
 import chainSVG from "../public/chain-9365116-7621444.svg"
 import FireSVG from "../public/fire.svg"
 import creativeSVG from "../public/Creative 1.svg"
-import heroImg from "../public/hackImgPic.png"
+import heroImg from "../public/hackImg2.png"
 import BgGradient from './BgGradient'
 import Stars from './Stars'
 
@@ -34,7 +34,7 @@ const Hero = () => {
                 {/* Info & CTA */}
                 <div className='col-span-6'>
                     <div
-                        className='xs:flex max-w-xs mx-auto w-[90%] relative mt-16 lg:mb-8 lg:content-start lg:max-w-sm lg:mx-0'
+                        className='xs:flex xs:max-w-[300px] max-w-xs mx-auto w-[90%] relative mt-16 lg:mb-8 lg:content-start lg:max-w-sm lg:mx-0'
                     >
                         <h1
                             style={clashDisplayBold.style}
@@ -44,7 +44,7 @@ const Hero = () => {
                             <span className='text-primaryPink'> 1.0</span>
                         </h1>
                         <div
-                            className='absolute -top-4 right-5 xs:-top-5 xs:right-20 sm:right-16 lg:-top-10 lg:-right-8'
+                            className='absolute -top-4 right-5 xs:-top-5 xs:right-10 sm:right-16 lg:-top-10 lg:-right-8'
                         >
                             <Image
                                 className='w-[25px] h-[25px] sm:h-[30px] sm:w-[30px] lg:w-[50px] lg:h-[50px] animate-pulse'
@@ -53,19 +53,19 @@ const Hero = () => {
                             />
                         </div>
                         <div
-                            className='flex place-content-center flex-grow mt-2 self-end xs:absolute xs:bottom-0 xs:-right-0 sm:-right-12 md:-right-14 lg:bottom-0 lg:-right-28'
+                            className='flex place-content-center flex-grow mt-2 self-end xs:absolute xs:bottom-0 xs:-right-4 xsL:-right-2 sm:-right-12 md:-right-14 lg:bottom-0 lg:-right-28'
                         >
                             <span className='block'>
                                 <Image
                                     src={chainSVG}
-                                    className='w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] lg:w-[35px] lg:h-[35px]'
+                                    className='w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] lg:w-[40px] lg:h-[40px]'
                                     alt='Connect With Other Great Minds'
                                 />
                             </span>
                             <span className='block'>
                                 <Image
                                     src={FireSVG}
-                                    className='w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] lg:w-[35px] lg:h-[35px]'
+                                    className='w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] lg:w-[40px] lg:h-[40px]'
                                     alt='Experience Creative Sparks'
                                 />
                             </span>
@@ -86,12 +86,13 @@ const Hero = () => {
                 </div>
 
                 {/* Image */}
-                <div className='flex items-center justify-center mt-6 lg:col-span-6'>
+                <div className='flex items-center justify-center mt-6 lg:col-span-6 relative'>
                     <Image
                         src={heroImg}
                         alt='Explore beyond your Imagination'
-                        className='w-60 lg:w-full'
+                        className='w-80 lg:w-full'
                     />
+                    <div className='absolute w-full h-full bg-primaryPurpleDark opacity-40 filter blur-lg' />
                 </div>
             </div>
         </section>
