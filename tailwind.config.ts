@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "320px",
+      },
       animate: {
         wobly: "blob 4s infinite"
       },
