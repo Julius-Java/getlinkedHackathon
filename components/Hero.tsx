@@ -19,7 +19,7 @@ const unicaOne = Unica_One({
 
 const Hero = () => {
     return (
-        <section className='min-h-screen pt-8 my-8 relative border-b border-slate-800'>
+        <section className='min-h-screen pt-8 my-8 relative border-b border-b-slate-800'>
             <BgGradient />
             <Stars />
             <div className='relative max-w-sm md:max-w-3xl mx-auto lg:-mr-0 mb-8'>
