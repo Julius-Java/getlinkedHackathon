@@ -10,7 +10,7 @@ import Image from 'next/image'
 const Footer = () => {
     return (
         <footer className='min-h-[100vh] bg-primaryPurpleDark py-4 xl:pt-14  text-slate-200 text-sm '>
-        <div className='max-w-6xl w-[90%] mx-auto md:grid md:grid-cols-12 md:gap-6 xl:gap-10'>
+        <div className='max-w-5xl w-[90%] mx-auto md:grid md:grid-cols-12 md:gap-6 xl:gap-10'>
             <div className='md:col-span-6  md:flex md:flex-col'>
                 <GetLinkedText />
                 <p className='mt-4 text-xs'>Getlinked Tech Hackathon is a technology

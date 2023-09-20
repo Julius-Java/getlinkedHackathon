@@ -7,6 +7,7 @@ import FireSVG from "../public/fire.svg"
 import creativeSVG from "../public/Creative 1.svg"
 import heroImg from "../public/hackImgPic.png"
 import BgGradient from './BgGradient'
+import Stars from './Stars'
 
 
 import { Unica_One } from 'next/font/google'
@@ -18,8 +19,9 @@ const unicaOne = Unica_One({
 
 const Hero = () => {
     return (
-        <section className='min-h-screen py-8 relative'>
+        <section className='min-h-screen pt-8 my-8 relative border-b border-slate-800'>
             <BgGradient />
+            <Stars />
             <div className='relative max-w-sm md:max-w-3xl mx-auto lg:-mr-0 mb-8'>
                 <h2
                     className='text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold italic text-white text-center lg:text-right'
@@ -28,7 +30,7 @@ const Hero = () => {
                 </h2>
                 <FancyUnderline />
             </div>
-            <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
+            <div className='lg:grid lg:grid-cols-12 lg:gap-4'>
                 {/* Info & CTA */}
                 <div className='col-span-6'>
                     <div
@@ -36,13 +38,13 @@ const Hero = () => {
                     >
                         <h1
                             style={clashDisplayBold.style}
-                            className='text-3xl text-white text-center lg:text-left sm:text-4xl lg:text-5xl'
+                            className='text-3xl text-white text-center lg:text-left sm:text-4xl lg:text-6xl'
                         >
                             getlinkedTech Hackathon
                             <span className='text-primaryPink'> 1.0</span>
                         </h1>
                         <div
-                            className='absolute -top-4 right-5 xs:-top-5 xs:right-8 sm:right-16 lg:-top-10 lg:right-18'
+                            className='absolute -top-4 right-5 xs:-top-5 xs:right-8 sm:right-16 lg:-top-10 lg:-right-8'
                         >
                             <Image
                                 className='w-[25px] h-[25px] sm:h-[30px] sm:w-[30px] lg:w-[50px] lg:h-[50px] animate-pulse'
@@ -51,7 +53,7 @@ const Hero = () => {
                             />
                         </div>
                         <div
-                            className='flex place-content-center flex-grow mt-2 self-end lg:absolute lg:bottom-0 lg:-right-6'
+                            className='flex place-content-center flex-grow mt-2 self-end lg:absolute lg:bottom-0 lg:-right-28'
                         >
                             <span className='block'>
                                 <Image

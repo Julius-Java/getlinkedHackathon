@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
     <nav
-        className='h-[10vh] max-w-6xl w-[90%] mx-auto flex justify-between items-center border-b border-slate-700 relative'
+        className='h-[10vh] max-w-5xl w-[90%] mx-auto flex justify-between items-center border-b border-slate-700 relative'
     >
 
         <GetLinkedText />
