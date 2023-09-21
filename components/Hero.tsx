@@ -7,7 +7,7 @@ import FireSVG from "../public/fire.svg"
 import creativeSVG from "../public/Creative 1.svg"
 import heroImg from "../public/hackImg2.png"
 import BgGradient from './BgGradient'
-import Stars from './Stars'
+import Stars from './HeroStars'
 
 
 import { Unica_One } from 'next/font/google'
@@ -19,7 +19,7 @@ const unicaOne = Unica_One({
 
 const Hero = () => {
     return (
-        <section className='pt-8 my-8 relative max-w-5xl w-[90%] mx-auto'>
+        <div className='pt-8 mt-8 relative max-w-5xl w-[90%] mx-auto'>
             <BgGradient />
             <Stars />
             <div className='relative max-w-sm md:max-w-3xl mx-auto lg:-mr-0 mb-8'>
@@ -95,7 +95,7 @@ const Hero = () => {
                     <div className='absolute w-full h-full bg-primaryPurpleDark opacity-40 filter blur-lg' />
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

@@ -2,6 +2,9 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Hero from '@/components/Hero'
+import Overview from '@/components/Overview'
+import RulesGuidelines from '@/components/RulesGuidelines'
+import Criteria from '@/components/Criteria'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,9 +16,18 @@ export default function Home() {
         <meta name="description" content='Get linked Hackathon. A chance to win exciting prices' />
       </Head>
       <main>
-        <div className='border-b border-b-slate-700'>
+        <section className='border-b border-b-slate-700'>
           <Hero />
-        </div>
+        </section>
+        <section className='border-b border-b-slate-700'>
+          <Overview />
+        </section>
+        <section className='border-b border-b-slate-700'>
+          <RulesGuidelines />
+        </section>
+        <section className='border-b border-b-slate-700'>
+          <Criteria />
+        </section>
       </main>
     </>
   )
