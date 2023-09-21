@@ -1,7 +1,7 @@
-import Facebook from "../public/fb.svg"
-import X from "../public/x-twitter.svg"
-import Ig from "../public/instagram.svg"
-import LinkedIn from "../public/linkedIn.svg"
+import Facebook from "../public/assets/fb.svg"
+import X from "../public/assets/x-twitter.svg"
+import Ig from "../public/assets/instagram.svg"
+import LinkedIn from "../public/assets/linkedIn.svg"
 
 const footerSocials = [
     {

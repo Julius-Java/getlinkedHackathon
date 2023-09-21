@@ -1,6 +1,6 @@
 import React from 'react'
-import starDark from "../public/starDark.svg"
-import starLight from "../public/starLight.svg"
+import starDark from "../../public/assets/starDark.svg"
+import starLight from "../../public/assets/starLight.svg"
 import Image from 'next/image'
 
 const GuidelineStars = () => {

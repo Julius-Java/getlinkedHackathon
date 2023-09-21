@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Hero from '@/components/Hero'
-import Overview from '@/components/Overview'
-import RulesGuidelines from '@/components/RulesGuidelines'
-import Criteria from '@/components/Criteria'
+import Hero from '@/components/index/Hero'
+import Overview from '@/components/index/Overview'
+import RulesGuidelines from '@/components/index/RulesGuidelines'
+import Criteria from '@/components/index/Criteria'
 
 const inter = Inter({ subsets: ['latin'] })
 

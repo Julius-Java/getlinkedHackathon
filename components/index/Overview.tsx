@@ -2,8 +2,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { clashDisplayBold } from '@/utils/fonts'
-import bulb from "../public/The big idea.svg"
-import arrow from "../public/arrow.svg"
+import bulb from "../../public/assets/The big idea.svg"
+import arrow from "../../public/assets/arrow.svg"
 import OverviewStars from './OverviewStars'
 
 

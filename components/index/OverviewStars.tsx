@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import starSm from "../public/starColorSmMobile.svg"
-import starLg from "../public/starColorLgMobile.svg"
+import starSm from "../../public/assets/starColorSmMobile.svg"
+import starLg from "../../public/assets/starColorLgMobile.svg"
 
 const OverviewStars = () => {
     return (

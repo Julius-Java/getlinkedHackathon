@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import ladySVG from "../public/ladySVG.svg"
+import ladySVG from "../../public/assets/ladySVG.svg"
 import Image from 'next/image'
-import BgGradient from './BgGradient'
+import BgGradient from '../shared/BgGradient'
 import GuidelineStars from './GuidelineStars'
 import { clashDisplayBold } from '@/utils/fonts'
 

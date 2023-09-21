@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import criteriaSVG from "../public/criteria.svg"
+import criteriaSVG from "../../public/assets/criteria.svg"
 import { clashDisplayBold } from '@/utils/fonts'
-import BgGradient from './BgGradient'
+import BgGradient from '../shared/BgGradient'
 import criteria from '@/utils/criteriaInfo'
 import CriteriaStars from './CriteriaStars'
 

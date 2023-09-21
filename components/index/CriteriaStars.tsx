@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import starLg from "../public/starColorLgMobile.svg"
-import starLight from "../public/starLight.svg"
-import starDark from "../public/starDark.svg"
+import starLg from "../../public/assets/starColorLgMobile.svg"
+import starLight from "../../public/assets/starLight.svg"
+import starDark from "../../public/assets/starDark.svg"
 
 const CriteriaStars = () => {
     return (

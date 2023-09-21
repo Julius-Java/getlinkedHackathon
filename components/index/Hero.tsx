@@ -2,11 +2,11 @@ import React from 'react'
 import FancyUnderline from './FancyUnderline'
 import Image from 'next/image'
 import { clashDisplayBold } from '@/utils/fonts'
-import chainSVG from "../public/chain-9365116-7621444.svg"
-import FireSVG from "../public/fire.svg"
-import creativeSVG from "../public/Creative 1.svg"
-import heroImg from "../public/hackImg2.png"
-import BgGradient from './BgGradient'
+import chainSVG from "../../public/assets/chain-9365116-7621444.svg"
+import FireSVG from "../../public/assets/fire.svg"
+import creativeSVG from "../../public/assets/Creative 1.svg"
+import heroImg from "../../public/assets/hackImg2.png"
+import BgGradient from '../shared/BgGradient'
 import Stars from './HeroStars'
 
 

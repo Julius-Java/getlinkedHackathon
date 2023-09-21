@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { Montserrat } from 'next/font/google'
 import Head from 'next/head'
 
-import Layout from '@/components/Layout'
+import Layout from '@/components/shared/Layout'
 
 const montserrat = Montserrat({
     subsets: ['latin'],
