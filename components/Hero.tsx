@@ -19,7 +19,7 @@ const unicaOne = Unica_One({
 
 const Hero = () => {
     return (
-        <div className='pt-8 mt-8 relative max-w-5xl w-[90%] mx-auto'>
+        <div className='pt-8 mt-8 relative max-w-7xl w-[90%] mx-auto'>
             <BgGradient />
             <Stars />
             <div className='relative max-w-sm md:max-w-3xl mx-auto lg:-mr-0 mb-8'>
@@ -53,19 +53,19 @@ const Hero = () => {
                             />
                         </div>
                         <div
-                            className='flex place-content-center flex-grow mt-2 self-end xs:absolute xs:bottom-0 xs:-right-4 xsL:-right-2 sm:-right-12 md:-right-14 lg:bottom-0 lg:-right-28'
+                            className='flex place-content-center flex-grow mt-2 self-end xs:absolute xs:bottom-0 xs:-right-4 xsL:-right-2 sm:-right-12 md:-right-14 lg:bottom-0 lg:-right-28 xl:-right-40'
                         >
                             <span className='block'>
                                 <Image
                                     src={chainSVG}
-                                    className='w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] lg:w-[40px] lg:h-[40px]'
+                                    className='w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[60px] xl:h-[60px]'
                                     alt='Connect With Other Great Minds'
                                 />
                             </span>
                             <span className='block'>
                                 <Image
                                     src={FireSVG}
-                                    className='w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] lg:w-[40px] lg:h-[40px]'
+                                    className='w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[60px] xl:h-[60px]'
                                     alt='Experience Creative Sparks'
                                 />
                             </span>
@@ -92,7 +92,7 @@ const Hero = () => {
                         alt='Explore beyond your Imagination'
                         className='w-80 lg:w-full'
                     />
-                    <div className='absolute w-full h-full bg-primaryPurpleDark opacity-40 filter blur-lg' />
+                    {/* <div className='absolute w-full h-full bg-primaryPurpleDark opacity-40 filter blur-lg' /> */}
                 </div>
             </div>
         </div>

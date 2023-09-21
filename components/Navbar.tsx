@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
     <nav
-        className='h-[10vh] max-w-5xl w-[90%] mx-auto flex justify-between items-center  relative'
+        className='h-[10vh] max-w-7xl w-[90%] mx-auto flex justify-between items-center  relative'
     >
 
         <GetLinkedText />
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <li><Link href={'#overview'}>Overview</Link></li>
                 <li><Link href={'#faqs'}>FAQs</Link></li>
                 <li><Link href={"/"}>Contact</Link></li>
-                <button className='self-start cta-btn mt-4 md:ml-6 sm:m-0'>Register</button>
+                <button className='self-start cta-btn mt-4 md:ml-6 sm:m-0 xl:py-4 xl:px-12'>Register</button>
             </ul>
         </div>
     </nav>

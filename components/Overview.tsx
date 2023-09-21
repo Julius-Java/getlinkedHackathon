@@ -9,7 +9,8 @@ import OverviewStars from './OverviewStars'
 
 const Overview = () => {
     return (
-        <div className='pt-4 my-8 mb-14 max-w-5xl w-[90%] mx-auto relative md:grid md:grid-cols-12 items-center'
+        <div
+            className='pt-4 my-8 mb-14 max-w-7xl w-[90%] mx-auto relative md:grid md:grid-cols-12 md:items-center min-h-[60vh]'
         >
             <OverviewStars />
             <div className='relative mb-8 max-w-xs mx-auto md:col-span-6'>
@@ -30,7 +31,7 @@ const Overview = () => {
                     style={clashDisplayBold.style}
                     className='text-white text-center xs:text-[20px] md:text-3xl mt-14 md:text-left'>Introduction to getlinked <span className='text-primaryPink'>techHackathon1.0</span></h3>
                 
-                <p className='text-[13px] text-white text-center mt-2 md:text-left md:text-sm'>Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as
+                <p className='text-[13px]  leading-6 text-white text-center mt-2 md:text-left md:text-sm md:leading-7'>Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as
                 day: to shape the future. Whether you're
                 a coding genius, a design maverick, or a
                 concept wizard, you'll have the chance to transform your ideas into reality. Solving

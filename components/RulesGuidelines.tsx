@@ -9,10 +9,12 @@ import { clashDisplayBold } from '@/utils/fonts'
 
 const RulesGuidelines = () => {
     return (
-        <div className='pt-2 my-6 mb-14 max-w-5xl w-[90%] mx-auto relative md:grid md:grid-cols-12 items-center'>
+        <div
+            className='pt-2 my-6 mb-14 max-w-7xl w-[90%] mx-auto relative md:grid md:grid-cols-12 items-center min-h-[60vh]'
+        >
             <BgGradient />
             <GuidelineStars />
-            <div className='max-w-xs mx-auto md:col-span-6 order-2'>
+            <div className='md:col-span-6 order-2'>
                 <Image
                     src={ladySVG}
                     alt='Rules and Guidelines'
@@ -27,7 +29,7 @@ const RulesGuidelines = () => {
                         Rules and <span className='text-primaryPink'>Guidelines</span>
                 </h3>
 
-                <p className='text-[13px] md:text-sm text-center mt-2 md:text-left'>
+                <p className='text-[13px] leading-6 md:leading-7 md:text-sm text-center mt-2 md:text-left'>
                     Our tech hackathon is a melting pot of 
                     visionaries, and its purpose is as clear as day:
                     to shape the future. Whether you're a coding

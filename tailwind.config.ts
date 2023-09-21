@@ -33,6 +33,7 @@ const config: Config = {
       },
       colors: {
         primaryPink: "#D434FE",
+        primaryPinkLight: "#FF26B9",
         primaryPurpleLight: "#903AFF",
         primaryPurpleDark: "#150E28"
       },
