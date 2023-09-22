@@ -5,6 +5,7 @@ import Hero from '@/components/index/Hero'
 import Overview from '@/components/index/Overview'
 import RulesGuidelines from '@/components/index/RulesGuidelines'
 import Criteria from '@/components/index/Criteria'
+import Faqs from '@/components/index/Faqs'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,9 @@ export default function Home() {
         </section>
         <section className='border-b border-b-slate-700'>
           <Criteria />
+        </section>
+        <section className='border-b border-b-slate-700'>
+          <Faqs />
         </section>
       </main>
     </>

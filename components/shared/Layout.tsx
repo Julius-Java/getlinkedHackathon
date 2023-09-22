@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const Layout = ({children}: any) => {
     return (
-        <div className='-mr-[4px] sm:-mr-4 overflow-hidden'>
+        <div className='-mr-[4px] sm:-mr-4 overflow-x-hidden'>
             <header className='border-b border-b-slate-700 h-[10vh]'
             >
                 <Navbar />

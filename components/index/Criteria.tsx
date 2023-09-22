@@ -13,11 +13,14 @@ const Criteria = () => {
         >
             <CriteriaStars />
             <BgGradient />
-            <div className='col-span-6'>
+            <div className='col-span-6 relative'>
                 <Image
                     src={criteriaSVG}
                     alt='Criteria'
                     className='w-full'
+                />
+                <div
+                    className='hidden lg:block lg:absolute lg:-top-8 lg:left-14 bg-gradient-to-r from-primaryPink from-[30%] via-primaryPurpleLight to-primaryPink rounded-full w-40 h-40 -z-20'
                 />
             </div>
 
@@ -46,7 +49,9 @@ const Criteria = () => {
                             </article>
                         ))
                     }
-                    <button className='cta-btn mt-4 text-white'>Read More</button>
+                    <div className='flex flex-col justify-center items-center md:items-start'>
+                        <button className='cta-btn mt-4 text-white lg:!py-4'>Read More</button>
+                    </div>
                 </div>
             </div>
         </div>

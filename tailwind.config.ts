@@ -1,16 +1,22 @@
 import type { Config } from 'tailwindcss'
+import withMT from "@material-tailwind/react/utils/withMT";
 
-const config: Config = {
+const baseConfig: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    'node_modules/preline/dist/*.js',
   ],
   theme: {
     extend: {
+      spacing: {
+        "300": "300px",
+      },
       screens: {
         xs: "320px",
-        xsL: "340px"
+        xsL: "340px",
+        xsX: "351px"
       },
       animate: {
         wobly: "blob 4s infinite"
@@ -39,6 +45,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('preline/plugin'),
+  ],
 }
-export default config
+
+const mergedConfig = withMT(baseConfig)
+
+export default baseConfig

@@ -10,6 +10,7 @@ import BgGradient from '../shared/BgGradient'
 import Stars from './HeroStars'
 
 
+
 import { Unica_One } from 'next/font/google'
 
 const unicaOne = Unica_One({
@@ -26,9 +27,8 @@ const Hero = () => {
                 <h2
                     className='text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold italic text-white text-center lg:text-right'
                 >
-                    Igniting a Revolution in HR Innovation
+                    Igniting a Revolution in <span className='relative after:hidden xsX:after:block after:content-[""] after:w-full after:h-[15px] xl:after:h-[25px] xl:after:-bottom-6  after:absolute after:-bottom-4 after:left-0 after:bg-[url("../public/assets/underline.svg")] after:bg-center after:bg-cover after:bg-no-repeat'>HR Innovation</span>
                 </h2>
-                <FancyUnderline />
             </div>
             <div className='lg:grid lg:grid-cols-12 lg:gap-4'>
                 {/* Info & CTA */}

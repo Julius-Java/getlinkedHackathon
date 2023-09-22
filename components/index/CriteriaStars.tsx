@@ -10,7 +10,7 @@ const CriteriaStars = () => {
             <Image
                 src={starLg}
                 alt=''
-                className='absolute top-0 left-28 w-[13px] h-[17px] animate-pulse lg:w-[30px] lg:h-[36px] lg:top-0 lg:left-14'
+                className='absolute top-0 left-28 w-[13px] h-[17px] animate-pulse lg:w-[30px] lg:h-[36px] lg:top-0 lg:left-4'
             />
 
             <Image

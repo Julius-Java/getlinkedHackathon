@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primaryPink: "#D434FE";
+    --primaryPinkLight: "#FF26B9";
+    --primaryPurpleLight: "#903AFF";
+    --primaryPurpleDark: "#150E28"
+}
+
 
 body {
     @apply bg-primaryPurpleDark overflow-x-hidden
 }
 
 
-@layer utilities {
+@layer components  {
     .cta-btn {
-        @apply bg-gradient-to-r from-pink-500 from-40% via-purple-600 to-blue-400 rounded py-3 px-8 font-bold sm:py-2 sm:px-4 md:px-10;
-    }
-
-    .fancy-underline {
-            height: 100px;
-            border-style: solid;
-            @apply w-[140px] border-4 border-transparent border-t-primaryPink rounded-[50%/100px] rounded-tl-[100px] rounded-tr-[100px] rounded-bl-[0px] rounded-br-[0px] min-[351px]:rounded-[220%/100px] lg:w-[200px] xl:w-[300px];
-            /* border-radius: 180%/100px 100px 0 0; */
+        @apply bg-gradient-to-r from-pink-500 from-40% via-purple-600 to-blue-400 !rounded py-3 px-8 font-bold sm:py-2 sm:px-4 md:px-10;
     }
 }
+
