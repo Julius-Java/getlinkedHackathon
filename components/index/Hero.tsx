@@ -1,5 +1,4 @@
 import React from 'react'
-import FancyUnderline from './FancyUnderline'
 import Image from 'next/image'
 import { clashDisplayBold } from '@/utils/fonts'
 import chainSVG from "../../public/assets/chain-9365116-7621444.svg"
@@ -53,7 +52,7 @@ const Hero = () => {
                             />
                         </div>
                         <div
-                            className='flex place-content-center flex-grow mt-2 self-end xs:absolute xs:bottom-0 xs:-right-4 xsL:-right-2 sm:-right-12 md:-right-14 lg:bottom-0 lg:-right-28 xl:-right-40'
+                            className='flex place-content-center flex-grow mt-2 self-end xs:absolute xs:bottom-0 xs:-right-8 xsL:-right-2 sm:-right-12 md:-right-14 lg:bottom-0 lg:-right-28 xl:-right-40'
                         >
                             <span className='block'>
                                 <Image
