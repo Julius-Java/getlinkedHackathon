@@ -58,7 +58,7 @@ const Footer = () => {
                         {
                             footerSocials.map(({name, href, icon}, index) => (
                                 <Link href={href} key={name}>
-                                    <Image src={icon} alt={name} />
+                                    <Image priority  src={icon} alt={name} />
                                 </Link>
                             ))
                         }
@@ -71,16 +71,16 @@ const Footer = () => {
                 <h2 className='text-sm font-semibold text-primaryPink'>Contact us</h2>
                 <div className='flex items-center gap-3 mt-3'>
                     <Link href={"tel:+23467981819"} target='_blank'>
-                        <Image src={callSVG} alt='Call GetLinked'/>
+                        <Image priority  src={callSVG} alt='Call GetLinked'/>
                     </Link>
                     <p className='text-xs'>+234 679 81819</p>
                 </div>
                 <div className='flex items-center gap-3 mt-3 relative group'>
                     <Link href={"https://maps.app.goo.gl/hGreL7VcXmDZvxnb7"} target='_blank'>
-                        <Image src={locationSVG} alt='Locate GetLinked'/>
+                        <Image priority  src={locationSVG} alt='Locate GetLinked'/>
                         <iframe
                             className='border-none w-[150px] h-[150px] hidden absolute -top-40 left-0 group-hover:block'
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.109925887565!2d3.3818752749074554!3d6.507767393484539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf3fae871f1%3A0x33fc1ca3c387cf64!2s27%20Alara%20St%2C%20Sabo%20yaba%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1695201681491!5m2!1sen!2sng" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.109925887565!2d3.3818752749074554!3d6.507767393484539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf3fae871f1%3A0x33fc1ca3c387cf64!2s27%20Alara%20St%2C%20Sabo%20yaba%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1695201681491!5m2!1sen!2sng" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </Link>
                     <p className='text-xs w-[50%]'>
                         27, Alara Street

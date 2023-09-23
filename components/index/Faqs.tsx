@@ -27,6 +27,7 @@ const Faqs = () => {
                 <Image
                     src={thinkerSVG}
                     alt='Frequently Asked Questions'
+                    priority
                     className='w-full'
                 />
             </div>

@@ -112,6 +112,7 @@ const RegistrationForm = () => {
                         <Image
                             src={thumbsupSVG}
                             alt="Rgitration form"
+                            priority
                             className='w-full'
                         />
                     </div>
@@ -127,6 +128,7 @@ const RegistrationForm = () => {
                             <Image
                                 src={registerSVG}
                                 alt="Rgitration form"
+                                priority
                                 className='w-full col-span-4 sm:w-4/5'
                             />
                         </div>

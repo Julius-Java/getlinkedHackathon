@@ -23,12 +23,14 @@ const Prizes = () => {
                 <Image
                     src={cupSVG}
                     alt='Champion'
+                    priority
                     className='w-full md:col-span-5'
                 />
 
                 <Image
                     src={rewardSVG}
                     alt='Rewards'
+                    priority
                     className='w-full mt-12 md:col-span-7'
                 />
             </div>

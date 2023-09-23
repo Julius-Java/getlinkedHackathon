@@ -18,6 +18,7 @@ const RulesGuidelines = () => {
                 <Image
                     src={ladySVG}
                     alt='Rules and Guidelines'
+                    priority
                     className='w-full'
                 />
             </div>

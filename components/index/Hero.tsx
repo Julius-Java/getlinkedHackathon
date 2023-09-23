@@ -48,6 +48,7 @@ const Hero = () => {
                             <Image
                                 className='w-[25px] h-[25px] sm:h-[30px] sm:w-[30px] lg:w-[50px] lg:h-[50px] animate-pulse'
                                 src={creativeSVG}
+                                priority
                                 alt='Game Changing Ideas'
                             />
                         </div>
@@ -57,6 +58,7 @@ const Hero = () => {
                             <span className='block'>
                                 <Image
                                     src={chainSVG}
+                                    priority
                                     className='w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[60px] xl:h-[60px]'
                                     alt='Connect With Other Great Minds'
                                 />
@@ -64,6 +66,7 @@ const Hero = () => {
                             <span className='block'>
                                 <Image
                                     src={FireSVG}
+                                    priority
                                     className='w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[60px] xl:h-[60px]'
                                     alt='Experience Creative Sparks'
                                 />
@@ -88,6 +91,7 @@ const Hero = () => {
                 <div className='flex items-center justify-center mt-6 lg:col-span-6 relative'>
                     <Image
                         src={heroImg}
+                        priority
                         alt='Explore beyond your Imagination'
                         className='w-80 lg:w-full'
                     />

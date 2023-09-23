@@ -18,11 +18,13 @@ const Overview = () => {
                     src={bulb}
                     className='w-full'
                     alt="The big Idea"
+                    priority
                 />
 
                 <Image
                     src={arrow}
                     alt=''
+                    priority
                     className='absolute -bottom-6 left-[98px] xs:left-[130px] md:left-[280px] sm:left-[280px] sm:w-[40px] sm:h-[60px] md:-bottom-16 lg:w-[50px] lg:h-[60px] lg:-bottom-10 lg:left-[450px] xl:left-[600px]'
                 />
             </div>

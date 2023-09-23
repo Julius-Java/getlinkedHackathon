@@ -17,6 +17,7 @@ const Criteria = () => {
                 <Image
                     src={criteriaSVG}
                     alt='Criteria'
+                    priority
                     className='w-full'
                 />
                 <div

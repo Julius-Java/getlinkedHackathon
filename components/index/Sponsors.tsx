@@ -21,6 +21,7 @@ const Sponsors = () => {
 
             <Image
                 src={sponsorSVG}
+                priority
                 alt='Getlinked Hackathon Partners and Sponsors'
                 className='w-full mt-12'
             />

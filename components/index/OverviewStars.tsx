@@ -9,12 +9,14 @@ const OverviewStars = () => {
             <Image
                 src={starLg}
                 alt=''
+                priority
                 className='absolute top-14 left-0 animate-pulse lg:w-[21px] lg:h-[25px]'
             />
 
             <Image
                 src={starSm}
                 alt=''
+                priority
                 className='absolute top-80 right-0 animate-pulse lg:w-[30px] lg:h-[36px] lg:top-24'
             />
         </>

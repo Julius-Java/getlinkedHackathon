@@ -15,6 +15,7 @@ const Congratulations = () => {
                 <Image
                     src={congratulationSVG}
                     alt='Congratulations'
+                    priority
                     className='w-full animate-bounce'
                 />
 

@@ -198,7 +198,7 @@ const ContactForm = () => {
                                 {
                                     footerSocials.map(({name, href, icon}, _) => (
                                         <Link href={href} key={name}>
-                                            <Image src={icon} alt={name} />
+                                            <Image src={icon} alt={name} priority />
                                         </Link>
                                     ))
                                 }
@@ -225,7 +225,7 @@ const ContactForm = () => {
                                 {
                                     footerSocials.map(({name, href, icon}, _) => (
                                         <Link href={href} key={name}>
-                                            <Image src={icon} alt={name} />
+                                            <Image src={icon} alt={name} priority />
                                         </Link>
                                     ))
                                 }

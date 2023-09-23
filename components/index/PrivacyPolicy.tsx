@@ -40,6 +40,7 @@ const PrivacyPolicy = () => {
                             <Image
                                 src={checkSVG}
                                 alt='Privacy Policy'
+                                priority
                                 className='self-start'
                             />
 
@@ -51,6 +52,7 @@ const PrivacyPolicy = () => {
                             <Image
                                 src={checkSVG}
                                 alt='Privacy Policy'
+                                priority
                                 className='self-start'
                             />
 
@@ -69,6 +71,7 @@ const PrivacyPolicy = () => {
                 <Image
                     src={privacySVG}
                     alt='Privacy Policy'
+                    priority
                     className='w-full mt-12'
                 />
             </div>
