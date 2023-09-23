@@ -27,7 +27,7 @@ const Timeline = () => {
                 <motion.div
                     ref={scrollRef}
                     style={{scaleY: scrollYProgress}}
-                    className=' absolute top-0 left-2 w-[4px] lg:left-[51.5%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 h-full origin-top bg-primaryPink rounded-md'
+                    className=' absolute hidden xs:block top-0 left-2 w-[4px] lg:left-[51.5%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 h-full origin-top bg-primaryPink rounded-md'
                 />
                 <ul className='xs:ml-8 xsX:ml-10 md:ml-12 lg:ml-0'>
                     <TimelineDetails

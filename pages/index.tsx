@@ -8,6 +8,9 @@ import Criteria from '@/components/index/Criteria'
 import Faqs from '@/components/index/Faqs'
 import Container from '@/components/shared/Container'
 import Timeline from '@/components/index/Timeline'
+import Prizes from '@/components/index/Prizes'
+import Sponsors from '@/components/index/Sponsors'
+import PrivacyPolicy from '@/components/index/PrivacyPolicy'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,6 +45,18 @@ export default function Home() {
         <Container>
           <Timeline />
         </Container>
+
+        <section className='border-b border-b-slate-700'>
+          <Prizes />
+        </section>
+
+        <section className='border-b border-b-slate-700'>
+          <Sponsors />
+        </section>
+
+        <section className='border-b border-b-slate-700'>
+          <PrivacyPolicy />
+        </section>
       </main>
     </>
   )
