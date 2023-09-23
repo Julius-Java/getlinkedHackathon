@@ -2,12 +2,16 @@ import type { Config } from 'tailwindcss'
 import withMT from "@material-tailwind/react/utils/withMT";
 
 const baseConfig: Config = {
+  // darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     'node_modules/preline/dist/*.js',
   ],
+  // daisyui: {
+  //   theme: [],
+  // },
   theme: {
     extend: {
       spacing: {
@@ -47,6 +51,7 @@ const baseConfig: Config = {
   },
   plugins: [
     require('preline/plugin'),
+    // require("daisyui")
   ],
 }
 

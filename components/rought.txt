@@ -1,0 +1,18 @@
+                                    <select
+                                        id="hs-select-label"
+                                        className="py-2 px-4 pr-9 block w-full bg-transparent border border-white rounded-md text-sm text-white"
+                                        {
+                                            ...register('group_size', {
+                                                required: "Group Size is required",
+                                            })
+                                        }
+                                    >
+                                        <option value={""}  className='text-xs bg-white text-black'>
+                                            Select
+                                        </option>
+                                        <option value={"1"}>1</option>
+                                        <option value={"2"}>2</option>
+                                        <option value={"3"}>3</option>
+                                    </select>
+                                    <span className='text-xs text-red-500 block mt-1 font-semibold'>{errors.group_size?.message}</span>
+                                </div>

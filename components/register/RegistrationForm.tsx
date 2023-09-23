@@ -9,6 +9,8 @@ import { useState } from 'react'
 import Congratulations from './Congratulations'
 import SpinSVG from '../shared/SpinSVG'
 import axios from 'axios'
+import { useRouter } from 'next/router'
+import Alert from '../shared/Alert'
 
 type RegistrationFormValues = {
     team_name: string
@@ -22,19 +24,28 @@ type RegistrationFormValues = {
 
 
 const RegistrationForm = () => {
+
+    // set is submitted state for when form is submitted
     const [isSubmitted, setIsSubmitted] = useState(false)
 
     // set is loading state for when form is submitted
     const [isLoading, setIsLoading] = useState(false)
 
+    // const [errorSubmission, setErrorSubmission] = useState(false)
+
+    const [returnedData, setReturnedData] = useState("")
+
+
     const {register, control, handleSubmit, formState: {errors}, reset, setValue, } = useForm<RegistrationFormValues>({mode: "onSubmit"})
 
 
     const formSubmit = (data: RegistrationFormValues) => {
+        // Set loading state for button
         setIsLoading(true)
+
         // Destructure data
         const {team_name, phone_number, email, project_topic, category, group_size} = data
-        console.log(data)
+
         // Make axios request to https://backend.getlinked.ai/hackathon/registration and return true if data is submitted successfully
         axios.post("https://backend.getlinked.ai/hackathon/registration", {
             team_name,
@@ -45,16 +56,37 @@ const RegistrationForm = () => {
             group_size
         })
         .then(res => {
-            console.log(res)
+            // Scroll to top of page
+            window.scrollTo(0, 0)
             reset()
             setIsSubmitted(true)
             setIsLoading(false)
         })
         .catch(err => {
-            console.log("Form didn't submit")
-            console.log(err.response.data)
-            err.response.data.email ? alert("Account exits") : alert("Something went wrong")
+            window.scrollTo(0, 0)
+            console.log(err.response.status)
             setIsLoading(false)
+            if (err.response) {
+                if (err.response.status === 400) {
+                    const feildErrors = err.response.data
+                    if (feildErrors && feildErrors.email[0]) {
+                        setReturnedData(feildErrors.email[0])
+                        setTimeout(() => {
+                            setReturnedData("")
+                        }, 5000)
+                    }
+                } else {
+                    setReturnedData("resource not Found")
+                    setTimeout(() => {
+                        setReturnedData("")
+                    }, 5000)
+                }
+            } else if (err.request) {
+                setReturnedData("Network Error")
+                setTimeout(() => {
+                    setReturnedData("")
+                }, 5000)
+            }
         })
     }
 
@@ -63,8 +95,11 @@ const RegistrationForm = () => {
             {
                 isSubmitted && <Congratulations />
             }
+            {
+                returnedData && <Alert alertInfo={returnedData} />
+            }
             <div
-                className='max-w-7xl w-[90%] mx-auto relative min-h-[40vh] pt-2 my-4 mb-14'
+                className='max-w-7xl w-[90%] mx-auto relative min-h-screen h-full pt-2 my-4 mb-14'
             >
                 <h2
                     style={clashDisplaySemibold.style}
@@ -106,7 +141,7 @@ const RegistrationForm = () => {
                                 <input
                                     type="text"
                                     id='teamName'
-                                    className='placeholder:font-semibold bg-transparent border border-white rounded-sm w-full py-1 px-4 text-white placeholder:text-xs'
+                                    className='placeholder:font-semibold bg-transparent border border-white rounded-sm w-full py-2 font-bold px-4 text-white placeholder:text-xs text-xs'
                                     placeholder='Enter the name of your group'
                                     {
                                         ...register('team_name', {
@@ -123,7 +158,7 @@ const RegistrationForm = () => {
                                 <input
                                     type="text"
                                     id='phone_number'
-                                    className='placeholder:font-semibold bg-transparent border border-white rounded-sm w-full py-1 px-4 text-white placeholder:text-xs'
+                                    className='placeholder:font-semibold bg-transparent border border-white rounded-sm w-full py-2 font-bold px-4 text-white placeholder:text-xs text-xs'
                                     placeholder='Enter your phone number'
                                     {
                                         ...register('phone_number', {
@@ -144,7 +179,7 @@ const RegistrationForm = () => {
                                 <input
                                     type="email"
                                     id='email'
-                                    className='placeholder:font-semibold bg-transparent border border-white rounded-sm w-full py-1 px-4 text-white placeholder:text-xs'
+                                    className='placeholder:font-semibold bg-transparent border border-white rounded-sm w-full py-2 font-bold px-4 text-white placeholder:text-xs text-xs'
                                     placeholder='Enter your email address'
                                     {
                                         ...register('email', {
@@ -165,7 +200,7 @@ const RegistrationForm = () => {
                                 <input
                                     type="text"
                                     id='project_topic'
-                                    className='placeholder:font-semibold bg-transparent border border-white rounded-sm w-full py-1 px-4 text-white placeholder:text-xs'
+                                    className='placeholder:font-semibold bg-transparent border border-white rounded-sm w-full py-2 font-bold px-4 text-white placeholder:text-xs text-xs'
                                     placeholder='What is your project topic?'
                                     {
                                         ...register('project_topic', {
@@ -180,7 +215,7 @@ const RegistrationForm = () => {
                                     <label htmlFor="hs-select-label" className="block text-sm font-medium mb-2 text-white">Category</label>
                                     <select
                                         id="hs-select-label"
-                                        className="py-2 px-4 pr-9 block w-full bg-transparent border border-white rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 font-bold"
+                                        className="py-2 px-4 pr-9 block w-full bg-primaryPurpleDark  border border-white rounded-md text-sm text-white font-bold"
                                         {
                                             ...register('category', {
                                                 required: "Category is required",
@@ -198,14 +233,14 @@ const RegistrationForm = () => {
                                     <label htmlFor="hs-select-label" className="block text-sm font-medium mb-2 text-white">Group size</label>
                                     <select
                                         id="hs-select-label"
-                                        className="py-2 px-4 pr-9 block w-full bg-transparent border border-white rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 font-bold"
+                                        className="py-2 px-4 pr-9 block w-full bg-primaryPurpleDark  border border-white rounded-md text-sm text-white font-bold "
                                         {
                                             ...register('group_size', {
                                                 required: "Group Size is required",
                                             })
                                         }
                                     >
-                                        <option value={""}  className='text-xs'>
+                                        <option value={""}  className='text-xs bg-white text-black'>
                                             Select
                                         </option>
                                         <option value={"1"}>1</option>
