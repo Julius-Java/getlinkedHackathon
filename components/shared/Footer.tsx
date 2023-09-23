@@ -6,8 +6,12 @@ import callSVG from "../../public/assets/call.svg"
 import GetLinkedText from './GetLinkedText'
 import Link from 'next/link'
 import Image from 'next/image'
+// use the useRouter hook
+import { useRouter } from 'next/router'
 
 const Footer = () => {
+    // useRouter hook
+    const router = useRouter()
     return (
         <footer className='min-h-[100vh] bg-primaryPurpleDark py-4 xl:pt-14  text-slate-200 text-sm '>
         <div className='max-w-5xl w-[90%] mx-auto md:grid md:grid-cols-12 md:gap-6 xl:gap-10'>
@@ -42,7 +46,7 @@ const Footer = () => {
                             ))
                         }
                         <li>
-                            <Link href={"#"}>Register</Link>
+                            <Link href={"/register"}>Register</Link>
                         </li>
                     </ul>
                 </nav>
@@ -50,11 +54,11 @@ const Footer = () => {
                 {/* Footer Socials */}
                 <div className='mt-8 md:mt-4 font-bold flex items-center gap-4'>
                     <p className='text-xs text-primaryPink'>Follow us</p>
-                    <div className='flex gap-5 items-center'>
+                    <div className='flex items-center gap-3'>
                         {
                             footerSocials.map(({name, href, icon}, index) => (
                                 <Link href={href} key={name}>
-                                    <Image src={icon} alt='name' />
+                                    <Image src={icon} alt={name} />
                                 </Link>
                             ))
                         }

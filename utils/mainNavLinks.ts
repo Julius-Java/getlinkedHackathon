@@ -13,7 +13,7 @@ const mainNavLinks = [
     },
     {
         name: 'Contact',
-        href: '#contact'
+        href: '/contact'
     }
 ]
 

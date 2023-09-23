@@ -1,14 +1,13 @@
 import React from 'react'
 import Hamburger from './Hamburger'
 import GetLinkedText from './GetLinkedText'
-
 import { Inter } from 'next/font/google'
-
 import Link from 'next/link'
-
 import { useState } from 'react'
-
 import mainNavLinks from '@/utils/mainNavLinks'
+
+import { useRouter } from 'next/router'
+
 
 const inter = Inter({
     subsets: ['latin'],
@@ -18,6 +17,9 @@ const inter = Inter({
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
+
+    const router = useRouter()
+
 
     return (
     <nav
@@ -43,7 +45,12 @@ const Navbar = () => {
                         </Link>
                     ))
                 }
-                <button className='self-start cta-btn mt-4 md:ml-6 sm:m-0 xl:py-4 xl:px-12'>Register</button>
+                <button
+                    className='self-start cta-btn mt-4 md:ml-6 sm:m-0 xl:py-4 xl:px-12'
+                    onClick={() => router.push('/register')}
+                >
+                        Register
+                </button>
             </ul>
         </div>
     </nav>

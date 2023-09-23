@@ -3,9 +3,8 @@ import type { AppProps } from 'next/app'
 import { Montserrat } from 'next/font/google'
 import Head from 'next/head'
 import PrelineContext from '@/components/shared/Preline'
-import hackImg from "../public/assets/hackImg2.png"
-
 import Layout from '@/components/shared/Layout'
+import { useRouter } from 'next/router'
 
 
 const montserrat = Montserrat({
@@ -14,6 +13,11 @@ const montserrat = Montserrat({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter()
+
+  const routesWithLayout = ["/"]
+
+  const useLayout = routesWithLayout.includes(router.pathname)
 
   return (
     <>
@@ -25,12 +29,25 @@ export default function App({ Component, pageProps }: AppProps) {
           html {
             font-family: ${montserrat.style.fontFamily};
           }
-        `}</style>
-        <Layout>
-          <PrelineContext>
-            <Component {...pageProps}  />
-          </PrelineContext>
-        </Layout>
+        `}
+        </style>
+        {
+            useLayout 
+            ?
+            (
+              <Layout>
+                <PrelineContext>
+                  <Component {...pageProps}  />
+                </PrelineContext>
+              </Layout>
+            )
+            :
+            (
+              <PrelineContext>
+                <Component {...pageProps}  />
+              </PrelineContext>
+            )
+        }
     </>
   )
 }
