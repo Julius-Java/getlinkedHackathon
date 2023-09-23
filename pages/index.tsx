@@ -11,6 +11,7 @@ import Timeline from '@/components/index/Timeline'
 import Prizes from '@/components/index/Prizes'
 import Sponsors from '@/components/index/Sponsors'
 import PrivacyPolicy from '@/components/index/PrivacyPolicy'
+import TransitionEffect from '@/components/shared/TransitionEffect'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,8 @@ export default function Home() {
         <title>Home Page</title>
         <meta name="description" content='Get linked Hackathon. A chance to win exciting prices' />
       </Head>
-      <main>
+      <TransitionEffect />
+      <main className='relative'>
         <section className='border-b border-b-slate-700'>
           <Hero />
         </section>

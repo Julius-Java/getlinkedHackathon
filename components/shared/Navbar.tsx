@@ -35,13 +35,13 @@ const Navbar = () => {
                 className={`absolute ${menuOpen ? "top-0" : "-top-[500px]"} z-20  -left-8 py-10 px-10  w-[120%] sm:left-0 bg-primaryPurpleDark transition-all duration-300 sm:top-0 sm:bg-transparent sm:relative sm:p-0 sm:ml-auto sm:w-auto`}
             >
                 <ul
-                    className={`${inter.className} text-white flex flex-col gap-4 mt-8 sm:flex-row sm:items-center sm:m-0 sm:gap-6 sm:text-sm`}
+                    className={`${inter.className} text-white flex flex-col items-start gap-4 mt-8 sm:flex-row sm:items-center sm:m-0 sm:gap-6 sm:text-sm`}
                 >
                     {
                         mainNavLinks.map(({name, href}, _) => (
-                            <Link href={href} key={name}>
+                            <button onClick={() => {router.push(href); setMenuOpen(false)}}  key={name}>
                                 {name}
-                            </Link>
+                            </button>
                         ))
                     }
                     <button
