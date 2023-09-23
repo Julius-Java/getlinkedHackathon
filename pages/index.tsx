@@ -26,7 +26,7 @@ export default function Home() {
           <Hero />
         </section>
 
-        <section className='border-b border-b-slate-700'>
+        <section className='border-b border-b-slate-700' id='Overview'>
           <Overview />
         </section>
 
@@ -38,7 +38,7 @@ export default function Home() {
           <Criteria />
         </section>
 
-        <section className='border-b border-b-slate-700'>
+        <section className='border-b border-b-slate-700' id='Faq'>
           <Faqs />
         </section>
 

@@ -84,7 +84,7 @@ const ContactForm = () => {
                     <Alert alertInfo={returnedError} />
                 )
             }
-            <div className='max-w-7xl w-[90%] mx-auto relative min-h-[40vh] pt-2 my-4 mb-14'>
+            <div className='max-w-7xl w-[90%] mx-auto relative min-h-[40vh] pt-2 my-4 mb-14 md:mt-40 lg:mt-60'>
                 <button
                     className='border-2 border-primaryPink rounded-full p-2 md:hidden'
                     onClick={() => router.push("/")}

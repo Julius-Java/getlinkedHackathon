@@ -5,11 +5,11 @@ const mainNavLinks = [
     },
     {
         name: 'Timeline',
-        href: '#timeline'
+        href: '#Timeline'
     },
     {
         name: 'FAQs',
-        href: '#faqs'
+        href: '#Faq'
     },
     {
         name: 'Contact',
