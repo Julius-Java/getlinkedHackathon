@@ -7,6 +7,7 @@ import creativeSVG from "../../public/assets/Creative 1.svg"
 import heroImg from "../../public/assets/hackImg2.png"
 import BgGradient from '../shared/BgGradient'
 import Stars from './HeroStars'
+import { useRouter } from 'next/router'
 
 
 
@@ -18,6 +19,7 @@ const unicaOne = Unica_One({
 })
 
 const Hero = () => {
+    const router = useRouter()
     return (
         <div className='pt-8 mt-8 relative max-w-7xl w-[90%] mx-auto'>
             <BgGradient />
@@ -77,10 +79,17 @@ const Hero = () => {
                     <p className='text-[13px] text-center text-white my-4  max-w-xs mx-auto lg:text-[19px] lg:max-w-lg lg:text-left lg:mx-0'>Participate in getlinked tech Hackathon 
                     2023 stand a chance to win a Big prize</p>
                     <div className='flex flex-col justify-center items-center lg:items-start'>
-                        <button className='text-white w-40 mt-4 cta-btn !py-3 !px-8'>Register</button>
+                        <button
+                            className='text-white w-40 mt-4 cta-btn !py-3 !px-8'
+                            onClick={() => router.push("/register")}
+                        >
+                            Register
+                        </button>
                     </div>
 
-                    <div className={`${unicaOne.className} text-white text-[30px] xs:text-[48px] flex items-center justify-center gap-4 mt-6 lg:justify-start`}>
+                    <div
+                        className={`${unicaOne.className} text-white text-[30px] xs:text-[48px] flex items-center justify-center gap-4 mt-6 lg:justify-start`}
+                    >
                         <p>00 <sub className='text-base font-semibold'>H</sub></p>
                         <p>00 <sub className='text-base font-semibold'>M</sub></p>
                         <p>00 <sub className='text-base font-semibold'>s</sub></p>
