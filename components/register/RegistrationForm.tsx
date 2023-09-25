@@ -99,7 +99,7 @@ const RegistrationForm = () => {
                 returnedData && <Alert alertInfo={returnedData} />
             }
             <div
-                className='max-w-7xl w-[90%] mx-auto relative min-h-screen h-full pt-2 my-4 mb-14'
+                className='max-w-7xl w-[90%] mx-auto relative min-h-screen h-full pt-2 my-4 mb-14 md:mt-30 lg:mt-40'
             >
                 <h2
                     style={clashDisplaySemibold.style}
