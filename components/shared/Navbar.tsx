@@ -20,6 +20,12 @@ const Navbar = () => {
 
     const router = useRouter()
 
+    const activeLink = (href: string) => {
+        // if (router.asPath === (href.startsWith("/") ? href : '/' + href))
+        //     console.log(true)
+        return router.asPath === (href.startsWith("/") ? href : '/' + href)
+    }
+
 
     return (
     <div className='fixed w-full z-40 top-0 left-0 bg-primaryPurpleDark'>
@@ -40,7 +46,11 @@ const Navbar = () => {
                     {
                         mainNavLinks.map(({name, href}, _) => (
                             <button onClick={() => {router.push(href); setMenuOpen(false)}}  key={name}>
-                                {name}
+                                <p
+                                    className={`${activeLink(href) ? "text-transparent bg-clip-text bg-gradient-to-r from-primaryPurpleLight to-primaryPink font-bold" : "text-white" }`}
+                                >
+                                    {name}
+                                </p>
                             </button>
                         ))
                     }
@@ -48,7 +58,7 @@ const Navbar = () => {
                         className='self-start cta-btn mt-4 md:ml-6 sm:m-0 xl:py-4 xl:px-12'
                         onClick={() => router.push('/register')}
                     >
-                            Register
+                        Register
                     </button>
                 </ul>
             </div>
