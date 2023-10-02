@@ -6,25 +6,25 @@ import LinkedIn from "../public/assets/linkedIn.svg"
 const footerSocials = [
     {
         name: "Instagram",
-        href: "#",
+        href: "https://www.instagram.com",
         icon: Ig,
     },
 
     {
         name: "Twitter-x",
-        href: "#",
+        href: "https://www.twitter.com",
         icon: X,
     },
 
     {
         name: "Facebook",
-        href: "#",
+        href: "https://www.facebook.com",
         icon: Facebook,
     },
 
     {
         name: "LinkedIn",
-        href: "#",
+        href: "https://www.linkedin.com",
         icon: LinkedIn,
     },
 ]

@@ -7,6 +7,7 @@ import creativeSVG from "../../public/assets/Creative 1.svg"
 import heroImg from "../../public/assets/hackImg2.png"
 import BgGradient from '../shared/BgGradient'
 import Stars from './HeroStars'
+import CountdownTimer from './Timer'
 import { useRouter } from 'next/router'
 
 
@@ -90,9 +91,10 @@ const Hero = () => {
                     <div
                         className={`${unicaOne.className} text-white text-[30px] xs:text-[48px] flex items-center justify-center gap-4 mt-6 lg:justify-start`}
                     >
-                        <p>00 <sub className='text-base font-semibold'>H</sub></p>
+                        {/* <p>00 <sub className='text-base font-semibold'>H</sub></p>
                         <p>00 <sub className='text-base font-semibold'>M</sub></p>
-                        <p>00 <sub className='text-base font-semibold'>s</sub></p>
+                        <p>00 <sub className='text-base font-semibold'>s</sub></p> */}
+                        <CountdownTimer />
                     </div>
                 </div>
 
